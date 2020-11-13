@@ -1,0 +1,20 @@
+{% extends 'mainapp/base.html' %}
+
+{% block content %}
+    <h1>Каталог</h1>
+
+    <div class="navbar navbar-light bg-light">
+        <ul class="nav nav-pills flex-column">
+            {% for item in Animes %}
+                <li class="nav-item">
+                    <a class="nav-link active" href="{% url 'anime_page' item.pk %}">
+                        {{ item }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+
+
+{% endblock %}

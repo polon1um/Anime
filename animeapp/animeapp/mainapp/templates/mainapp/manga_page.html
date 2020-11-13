@@ -1,0 +1,25 @@
+{% block content %}
+    <h1>Манга</h1>
+    <p>
+        <img class="card-img-top" src="../../../{{ manga.photo }}" alt="Card image">
+    </p>
+    <p>
+        {{ manga.name }}
+    </p>
+    <p>
+        Описание: {{ manga.desc }}
+    </p>
+    <p>
+        Автор: {{ manga.avtor }}
+    </p>
+    <p>
+        Художник: {{ manga.painter }}
+    </p>
+    <p>
+        Дата релиза: {{ manga.data }}
+    </p>
+    <p>
+        Главы: {{ manga.page }}
+    </p>
+{% endblock %}
+

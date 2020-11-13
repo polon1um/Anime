@@ -1,0 +1,23 @@
+{% block content %}
+    <h1>Аниме</h1>
+    <p>
+        <img class="card-img-top" src="../../../{{ manga.photo }}" alt="Card image">
+    </p>
+    <p>
+       Название: {{ anime.name }}
+    </p>
+    <p>
+        Описание: {{ anime.desc }}
+    </p>
+    <p>
+        Продюсер: {{ anime.producer }}
+    </p>
+    <p>
+        Дата релиза: {{ anime.data }}
+    </p>
+    <p>
+        Эпизоды: {{ anime.episodes }}
+    </p>
+{% endblock %}
+
+
